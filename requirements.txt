@@ -1,0 +1,5 @@
+pygame>=2.5.0
+matplotlib>=3.8.0
+numpy>=1.26.0
+pyvis>=0.3.2
+networkx>=3.0

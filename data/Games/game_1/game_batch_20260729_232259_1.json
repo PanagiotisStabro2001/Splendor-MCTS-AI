@@ -1,0 +1,2367 @@
+{
+  "metadata": {
+    "game_id": "batch_20260729_232259_1",
+    "start_time": "2026-07-29T23:22:59.685017",
+    "end_time": "2026-07-29T23:23:52.106508",
+    "winner": 1,
+    "total_turns": 58,
+    "final_scores": {
+      "0": 13,
+      "1": 15
+    },
+    "total_duration_seconds": 52.42149114608765
+  },
+  "moves": [
+    {
+      "turn_id": 0,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>, <GemType.RED: 'red'>]}",
+      "state_hash": "2a9e9d1bd72d",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:00.035554"
+    },
+    {
+      "turn_id": 0,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.GREEN: 'green'>, <GemType.RED: 'red'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "16acf553b9dc",
+      "duration_ms": 1003.3402442932129,
+      "timestamp": "2026-07-29T23:23:01.488883"
+    },
+    {
+      "turn_id": 1,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.GREEN: 'green'>, <GemType.RED: 'red'>]}",
+      "state_hash": "17e51f296fdc",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:01.924581"
+    },
+    {
+      "turn_id": 1,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>]}",
+      "state_hash": "c0bf64be11e5",
+      "duration_ms": 1002.9261112213135,
+      "timestamp": "2026-07-29T23:23:03.527624"
+    },
+    {
+      "turn_id": 2,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.RED: 'red'>: 2, <GemType.WHITE: 'white'>: 1})}",
+      "state_hash": "aa332c199d46",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:03.926824"
+    },
+    {
+      "turn_id": 2,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=2, points=1, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.WHITE: 'white'>: 3, <GemType.GREEN: 'green'>: 2, <GemType.BLACK: 'black'>: 2})}",
+      "state_hash": "d26dd9b96cd3",
+      "duration_ms": 1002.9518604278564,
+      "timestamp": "2026-07-29T23:23:05.375120"
+    },
+    {
+      "turn_id": 3,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "191d863b7056",
+      "duration_ms": 1.001119613647461,
+      "timestamp": "2026-07-29T23:23:05.741144"
+    },
+    {
+      "turn_id": 3,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=1, points=1, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.GREEN: 'green'>: 4})}",
+      "state_hash": "36779e906778",
+      "duration_ms": 1003.0732154846191,
+      "timestamp": "2026-07-29T23:23:07.323447"
+    },
+    {
+      "turn_id": 4,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.RED: 'red'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "bd67434dfa8f",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:07.769755"
+    },
+    {
+      "turn_id": 4,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.BLUE: 'blue'>: 2, <GemType.RED: 'red'>: 1})}",
+      "state_hash": "d753ec194723",
+      "duration_ms": 1002.3269653320312,
+      "timestamp": "2026-07-29T23:23:09.285747"
+    },
+    {
+      "turn_id": 5,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.BLACK: 'black'>: 3})}",
+      "state_hash": "41711a44d97f",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:09.639849"
+    },
+    {
+      "turn_id": 5,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.BLUE: 'blue'>: 2, <GemType.RED: 'red'>: 1}), 'from_reserved': True}",
+      "state_hash": "58e6b7581544",
+      "duration_ms": 1002.8290748596191,
+      "timestamp": "2026-07-29T23:23:11.163175"
+    },
+    {
+      "turn_id": 6,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "1dc360540bfb",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:11.520712"
+    },
+    {
+      "turn_id": 6,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=2, points=2, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.RED: 'red'>: 5})}",
+      "state_hash": "38e41016739e",
+      "duration_ms": 1004.4143199920654,
+      "timestamp": "2026-07-29T23:23:12.967717"
+    },
+    {
+      "turn_id": 7,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=1, gem_bonus=<GemType.WHITE: 'white'>, cost={<GemType.BLUE: 'blue'>: 3, <GemType.GREEN: 'green'>: 2, <GemType.RED: 'red'>: 2})}",
+      "state_hash": "7c3dd69e19d2",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:13.346480"
+    },
+    {
+      "turn_id": 7,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.GREEN: 'green'>, <GemType.RED: 'red'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "48b90fe7eb3d",
+      "duration_ms": 1002.4328231811523,
+      "timestamp": "2026-07-29T23:23:14.899195"
+    },
+    {
+      "turn_id": 8,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.WHITE: 'white'>: 3})}",
+      "state_hash": "526e7b894aa4",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:15.343309"
+    },
+    {
+      "turn_id": 8,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.BLACK: 'black'>: 3})}",
+      "state_hash": "129005b0c7e2",
+      "duration_ms": 1005.3470134735107,
+      "timestamp": "2026-07-29T23:23:16.877038"
+    },
+    {
+      "turn_id": 9,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.BLUE: 'blue'>, <GemType.RED: 'red'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "925933293d3f",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:17.251825"
+    },
+    {
+      "turn_id": 9,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>]}",
+      "state_hash": "39c96cf199a6",
+      "duration_ms": 1033.2999229431152,
+      "timestamp": "2026-07-29T23:23:18.753409"
+    },
+    {
+      "turn_id": 10,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.BLACK: 'black'>: 3})}",
+      "state_hash": "4daa655d1fd3",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:19.128689"
+    },
+    {
+      "turn_id": 10,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=2, gem_bonus=<GemType.WHITE: 'white'>, cost={<GemType.GREEN: 'green'>: 5})}",
+      "state_hash": "b07055d5d3c5",
+      "duration_ms": 1004.6179294586182,
+      "timestamp": "2026-07-29T23:23:20.691640"
+    },
+    {
+      "turn_id": 11,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>, <GemType.RED: 'red'>]}",
+      "state_hash": "ad11cba95d04",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:21.112672"
+    },
+    {
+      "turn_id": 11,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=1, gem_bonus=<GemType.WHITE: 'white'>, cost={<GemType.BLUE: 'blue'>: 4})}",
+      "state_hash": "e4d7ec641c0d",
+      "duration_ms": 1002.3419857025146,
+      "timestamp": "2026-07-29T23:23:22.624482"
+    },
+    {
+      "turn_id": 12,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.GREEN: 'green'>: 3})}",
+      "state_hash": "7cf3e965642b",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:22.994866"
+    },
+    {
+      "turn_id": 12,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_2_same",
+      "action_data": "{'gem': <GemType.GREEN: 'green'>}",
+      "state_hash": "feaa1a9973c3",
+      "duration_ms": 1039.0703678131104,
+      "timestamp": "2026-07-29T23:23:24.477293"
+    },
+    {
+      "turn_id": 13,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>]}",
+      "state_hash": "6690204e5676",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:24.817989"
+    },
+    {
+      "turn_id": 13,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.WHITE: 'white'>, cost={<GemType.GREEN: 'green'>: 3})}",
+      "state_hash": "b5f4cec38ee4",
+      "duration_ms": 1003.220796585083,
+      "timestamp": "2026-07-29T23:23:26.325751"
+    },
+    {
+      "turn_id": 14,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=1, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.WHITE: 'white'>: 3, <GemType.BLUE: 'blue'>: 2, <GemType.RED: 'red'>: 2})}",
+      "state_hash": "4874238c52b3",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:26.686720"
+    },
+    {
+      "turn_id": 14,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>, <GemType.RED: 'red'>]}",
+      "state_hash": "90dbf52c3f74",
+      "duration_ms": 1004.4677257537842,
+      "timestamp": "2026-07-29T23:23:28.232230"
+    },
+    {
+      "turn_id": 15,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.GREEN: 'green'>: 3})}",
+      "state_hash": "0f2447b9e7c4",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:28.603850"
+    },
+    {
+      "turn_id": 15,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>]}",
+      "state_hash": "b8d87e44ca45",
+      "duration_ms": 1024.0187644958496,
+      "timestamp": "2026-07-29T23:23:30.094333"
+    },
+    {
+      "turn_id": 16,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.WHITE: 'white'>, <GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>]}",
+      "state_hash": "9ca728b7dbeb",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:30.466830"
+    },
+    {
+      "turn_id": 16,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.BLUE: 'blue'>: 3})}",
+      "state_hash": "1cec278df4fa",
+      "duration_ms": 1005.3591728210449,
+      "timestamp": "2026-07-29T23:23:31.907873"
+    },
+    {
+      "turn_id": 17,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=1, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.GREEN: 'green'>: 4})}",
+      "state_hash": "400b158c9960",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:32.224030"
+    },
+    {
+      "turn_id": 17,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "05ce3e8baeda",
+      "duration_ms": 1010.9870433807373,
+      "timestamp": "2026-07-29T23:23:33.717990"
+    },
+    {
+      "turn_id": 18,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=2, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.RED: 'red'>: 5})}",
+      "state_hash": "52dbb64bb703",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:34.028008"
+    },
+    {
+      "turn_id": 18,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=1, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.GREEN: 'green'>: 4}), 'from_reserved': True}",
+      "state_hash": "fd4bd75736f3",
+      "duration_ms": 1006.9243907928467,
+      "timestamp": "2026-07-29T23:23:35.562540"
+    },
+    {
+      "turn_id": 19,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.BLUE: 'blue'>: 3})}",
+      "state_hash": "6033c2833e83",
+      "duration_ms": 1.0008811950683594,
+      "timestamp": "2026-07-29T23:23:35.953225"
+    },
+    {
+      "turn_id": 19,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=2, points=3, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.BLACK: 'black'>: 6})}",
+      "state_hash": "4868e0d186de",
+      "duration_ms": 1005.0458908081055,
+      "timestamp": "2026-07-29T23:23:37.378509"
+    },
+    {
+      "turn_id": 20,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.GREEN: 'green'>, <GemType.RED: 'red'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "675f12ba4a6a",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:37.681446"
+    },
+    {
+      "turn_id": 20,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=1, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.WHITE: 'white'>: 3, <GemType.RED: 'red'>: 2, <GemType.BLACK: 'black'>: 2})}",
+      "state_hash": "9a49bba3843e",
+      "duration_ms": 1003.953218460083,
+      "timestamp": "2026-07-29T23:23:39.177098"
+    },
+    {
+      "turn_id": 21,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.GREEN: 'green'>, <GemType.RED: 'red'>, <GemType.BLACK: 'black'>]}",
+      "state_hash": "f997b5cefdb7",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:39.465432"
+    },
+    {
+      "turn_id": 21,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "take_3_different",
+      "action_data": "{'gems': [<GemType.BLUE: 'blue'>, <GemType.GREEN: 'green'>, <GemType.RED: 'red'>]}",
+      "state_hash": "c30596687fc4",
+      "duration_ms": 1009.1149806976318,
+      "timestamp": "2026-07-29T23:23:40.808778"
+    },
+    {
+      "turn_id": 22,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.WHITE: 'white'>: 3})}",
+      "state_hash": "f9948e3a5a3a",
+      "duration_ms": 1.001119613647461,
+      "timestamp": "2026-07-29T23:23:41.149299"
+    },
+    {
+      "turn_id": 22,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=1, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.BLUE: 'blue'>: 4})}",
+      "state_hash": "d998ac6c18b2",
+      "duration_ms": 1004.4941902160645,
+      "timestamp": "2026-07-29T23:23:42.500429"
+    },
+    {
+      "turn_id": 23,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=3, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.RED: 'red'>: 6})}",
+      "state_hash": "28433571c7de",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:42.728366"
+    },
+    {
+      "turn_id": 23,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=1, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.WHITE: 'white'>: 3, <GemType.GREEN: 'green'>: 2, <GemType.BLACK: 'black'>: 2}), 'from_reserved': True}",
+      "state_hash": "47201d9865cc",
+      "duration_ms": 1004.4243335723877,
+      "timestamp": "2026-07-29T23:23:44.235680"
+    },
+    {
+      "turn_id": 24,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.WHITE: 'white'>, cost={<GemType.RED: 'red'>: 3})}",
+      "state_hash": "a03af39b87af",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:44.500383"
+    },
+    {
+      "turn_id": 24,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "reserve_card",
+      "action_data": "{'card': Card(tier=1, points=1, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.WHITE: 'white'>: 4})}",
+      "state_hash": "92857d88ebca",
+      "duration_ms": 1005.3908824920654,
+      "timestamp": "2026-07-29T23:23:45.837140"
+    },
+    {
+      "turn_id": 25,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.WHITE: 'white'>: 3})}",
+      "state_hash": "c251bd96f722",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:46.177552"
+    },
+    {
+      "turn_id": 25,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.WHITE: 'white'>: 2, <GemType.BLACK: 'black'>: 1})}",
+      "state_hash": "dbe6047ff920",
+      "duration_ms": 1001.9290447235107,
+      "timestamp": "2026-07-29T23:23:47.489318"
+    },
+    {
+      "turn_id": 26,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=2, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.BLACK: 'black'>: 5})}",
+      "state_hash": "d0c222959891",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:47.757895"
+    },
+    {
+      "turn_id": 26,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=2, gem_bonus=<GemType.BLACK: 'black'>, cost={<GemType.WHITE: 'white'>: 5})}",
+      "state_hash": "ac8ee8c14f76",
+      "duration_ms": 1002.2842884063721,
+      "timestamp": "2026-07-29T23:23:49.033455"
+    },
+    {
+      "turn_id": 27,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=3, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.GREEN: 'green'>: 6})}",
+      "state_hash": "2729a39c93ef",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:49.300554"
+    },
+    {
+      "turn_id": 27,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=2, gem_bonus=<GemType.BLUE: 'blue'>, cost={<GemType.WHITE: 'white'>: 5})}",
+      "state_hash": "765f995102f5",
+      "duration_ms": 1004.6930313110352,
+      "timestamp": "2026-07-29T23:23:50.557499"
+    },
+    {
+      "turn_id": 28,
+      "player_id": 0,
+      "player_type": "Basic",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=1, points=0, gem_bonus=<GemType.GREEN: 'green'>, cost={<GemType.RED: 'red'>: 3})}",
+      "state_hash": "128bf6bb0e4a",
+      "duration_ms": 0.0,
+      "timestamp": "2026-07-29T23:23:50.759549"
+    },
+    {
+      "turn_id": 28,
+      "player_id": 1,
+      "player_type": "MCTS",
+      "action_type": "buy_card",
+      "action_data": "{'card': Card(tier=2, points=1, gem_bonus=<GemType.RED: 'red'>, cost={<GemType.BLUE: 'blue'>: 3, <GemType.GREEN: 'green'>: 2, <GemType.BLACK: 'black'>: 2})}",
+      "state_hash": "ca7fb4f894e8",
+      "duration_ms": 1002.2158622741699,
+      "timestamp": "2026-07-29T23:23:52.106508"
+    }
+  ],
+  "game_log": [
+    {
+      "turn_number": 0,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.46975000000000006,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.481375,
+      "actual_win_prob": 0.44075,
+      "accuracy_loss": 0.04062500000000002,
+      "move_classification": "Inaccuracy"
+    },
+    {
+      "turn_number": 1,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.42669859375,
+      "search_depth": 2,
+      "simulation_count": 325,
+      "visit_distribution": [
+        {
+          "visits": 16,
+          "value": 0.42669859375
+        },
+        {
+          "visits": 15,
+          "value": 0.4066333333333334
+        },
+        {
+          "visits": 15,
+          "value": 0.41796183333333337
+        }
+      ],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 1003.3402442932129,
+      "is_best_move": true,
+      "best_win_prob": 0.431321375,
+      "actual_win_prob": 0.431321375,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 1,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.4038333333333333,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.44137100000000007,
+      "actual_win_prob": 0.33074999999999993,
+      "accuracy_loss": 0.11062100000000014,
+      "move_classification": "Mistake"
+    },
+    {
+      "turn_number": 2,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.43132647058823537,
+      "search_depth": 3,
+      "simulation_count": 323,
+      "visit_distribution": [
+        {
+          "visits": 17,
+          "value": 0.43132647058823537
+        },
+        {
+          "visits": 17,
+          "value": 0.4270425
+        },
+        {
+          "visits": 16,
+          "value": 0.40982921875
+        }
+      ],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 1002.9261112213135,
+      "is_best_move": false,
+      "best_win_prob": 0.42576011363636357,
+      "actual_win_prob": 0.44000000000000006,
+      "accuracy_loss": -0.01423988636363649,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 2,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        1,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.4273125000000001,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.47439285714285717,
+      "actual_win_prob": 0.41000000000000003,
+      "accuracy_loss": 0.06439285714285714,
+      "move_classification": "Inaccuracy"
+    },
+    {
+      "turn_number": 3,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.4488365384615384,
+      "search_depth": 3,
+      "simulation_count": 322,
+      "visit_distribution": [
+        {
+          "visits": 26,
+          "value": 0.4488365384615384
+        },
+        {
+          "visits": 25,
+          "value": 0.4423293
+        },
+        {
+          "visits": 23,
+          "value": 0.43103260869565213
+        }
+      ],
+      "player_points": 0,
+      "action_type": "reserve_card",
+      "duration_ms": 1002.9518604278564,
+      "is_best_move": true,
+      "best_win_prob": 0.4528181818181818,
+      "actual_win_prob": 0.4528181818181818,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 3,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        1,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.34454083333333335,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 1.001119613647461,
+      "is_best_move": false,
+      "best_win_prob": 0.40185714285714297,
+      "actual_win_prob": 0.441125,
+      "accuracy_loss": -0.03926785714285702,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 4,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.4818068181818182,
+      "search_depth": 3,
+      "simulation_count": 299,
+      "visit_distribution": [
+        {
+          "visits": 22,
+          "value": 0.4818068181818182
+        },
+        {
+          "visits": 20,
+          "value": 0.4661625
+        },
+        {
+          "visits": 20,
+          "value": 0.46692125000000007
+        }
+      ],
+      "player_points": 0,
+      "action_type": "reserve_card",
+      "duration_ms": 1003.0732154846191,
+      "is_best_move": true,
+      "best_win_prob": 0.47011111111111115,
+      "actual_win_prob": 0.47011111111111115,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 4,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        1,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.35806833333333327,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.40832142857142856,
+      "actual_win_prob": 0.34108,
+      "accuracy_loss": 0.06724142857142856,
+      "move_classification": "Inaccuracy"
+    },
+    {
+      "turn_number": 5,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        0,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.4854114130434783,
+      "search_depth": 3,
+      "simulation_count": 327,
+      "visit_distribution": [
+        {
+          "visits": 23,
+          "value": 0.4854114130434783
+        },
+        {
+          "visits": 23,
+          "value": 0.4814130434782609
+        },
+        {
+          "visits": 22,
+          "value": 0.4725467045454545
+        }
+      ],
+      "player_points": 0,
+      "action_type": "reserve_card",
+      "duration_ms": 1002.3269653320312,
+      "is_best_move": true,
+      "best_win_prob": 0.48984353448275864,
+      "actual_win_prob": 0.48984353448275864,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 5,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        2,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.40866666666666673,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.39239656250000005,
+      "actual_win_prob": 0.3265283333333333,
+      "accuracy_loss": 0.06586822916666674,
+      "move_classification": "Inaccuracy"
+    },
+    {
+      "turn_number": 6,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        1,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.46101879807692303,
+      "search_depth": 3,
+      "simulation_count": 283,
+      "visit_distribution": [
+        {
+          "visits": 52,
+          "value": 0.46101879807692303
+        },
+        {
+          "visits": 47,
+          "value": 0.4469387765957448
+        },
+        {
+          "visits": 35,
+          "value": 0.4094387142857143
+        }
+      ],
+      "player_points": 0,
+      "action_type": "buy_card",
+      "duration_ms": 1002.8290748596191,
+      "is_best_move": true,
+      "best_win_prob": 0.4586402734375,
+      "actual_win_prob": 0.4586402734375,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 6,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        2,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.34175000000000005,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.40875,
+      "actual_win_prob": 0.25109000000000004,
+      "accuracy_loss": 0.15765999999999997,
+      "move_classification": "Mistake"
+    },
+    {
+      "turn_number": 7,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        1,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.5046597727272729,
+      "search_depth": 3,
+      "simulation_count": 291,
+      "visit_distribution": [
+        {
+          "visits": 22,
+          "value": 0.5046597727272729
+        },
+        {
+          "visits": 22,
+          "value": 0.5098565909090909
+        },
+        {
+          "visits": 21,
+          "value": 0.48545773809523807
+        }
+      ],
+      "player_points": 0,
+      "action_type": "reserve_card",
+      "duration_ms": 1004.4143199920654,
+      "is_best_move": true,
+      "best_win_prob": 0.4989450000000001,
+      "actual_win_prob": 0.4989450000000001,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 7,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        2,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 6,
+      "win_probability": 0.34955875,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.4341684375,
+      "actual_win_prob": 0.457125,
+      "accuracy_loss": -0.0229565625,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 8,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        1,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.4689059558823531,
+      "search_depth": 3,
+      "simulation_count": 316,
+      "visit_distribution": [
+        {
+          "visits": 34,
+          "value": 0.4689059558823531
+        },
+        {
+          "visits": 31,
+          "value": 0.45281024193548397
+        },
+        {
+          "visits": 30,
+          "value": 0.45456816666666666
+        }
+      ],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 1002.4328231811523,
+      "is_best_move": true,
+      "best_win_prob": 0.4703784756097563,
+      "actual_win_prob": 0.4703784756097563,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 8,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        3,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.5789306249999999,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.45240321428571434,
+      "actual_win_prob": 0.37916666666666665,
+      "accuracy_loss": 0.07323654761904769,
+      "move_classification": "Inaccuracy"
+    },
+    {
+      "turn_number": 9,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        2,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.5056013636363639,
+      "search_depth": 3,
+      "simulation_count": 298,
+      "visit_distribution": [
+        {
+          "visits": 77,
+          "value": 0.5056013636363639
+        },
+        {
+          "visits": 57,
+          "value": 0.4769365350877193
+        },
+        {
+          "visits": 45,
+          "value": 0.449106388888889
+        }
+      ],
+      "player_points": 0,
+      "action_type": "buy_card",
+      "duration_ms": 1005.3470134735107,
+      "is_best_move": true,
+      "best_win_prob": 0.5003848170731708,
+      "actual_win_prob": 0.5003848170731708,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 9,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        3,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.7020245833333334,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.4917183333333334,
+      "actual_win_prob": 0.508875,
+      "accuracy_loss": -0.017156666666666542,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 10,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        2,
+        0,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.6873974431818184,
+      "search_depth": 3,
+      "simulation_count": 307,
+      "visit_distribution": [
+        {
+          "visits": 44,
+          "value": 0.6873974431818184
+        },
+        {
+          "visits": 42,
+          "value": 0.6758701785714286
+        },
+        {
+          "visits": 36,
+          "value": 0.6497122222222221
+        }
+      ],
+      "player_points": 0,
+      "action_type": "take_3_different",
+      "duration_ms": 1033.2999229431152,
+      "is_best_move": true,
+      "best_win_prob": 0.6583554500000003,
+      "actual_win_prob": 0.6583554500000003,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 10,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        4,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.5365172916666666,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.47872950000000014,
+      "actual_win_prob": 0.5979614999999999,
+      "accuracy_loss": -0.11923199999999978,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 11,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        2,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 4,
+      "win_probability": 0.6190143439716317,
+      "search_depth": 4,
+      "simulation_count": 317,
+      "visit_distribution": [
+        {
+          "visits": 141,
+          "value": 0.6190143439716317
+        },
+        {
+          "visits": 123,
+          "value": 0.60335918699187
+        },
+        {
+          "visits": 31,
+          "value": 0.4331651612903226
+        }
+      ],
+      "player_points": 2,
+      "action_type": "buy_card",
+      "duration_ms": 1004.6179294586182,
+      "is_best_move": true,
+      "best_win_prob": 0.6234507865168544,
+      "actual_win_prob": 0.6234507865168544,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 11,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        4,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.6031480000000001,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.6566017187500001,
+      "actual_win_prob": 0.25375000000000003,
+      "accuracy_loss": 0.40285171875000003,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 12,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        3,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.8090073214285716,
+      "search_depth": 3,
+      "simulation_count": 305,
+      "visit_distribution": [
+        {
+          "visits": 70,
+          "value": 0.8090073214285716
+        },
+        {
+          "visits": 37,
+          "value": 0.7341675675675676
+        },
+        {
+          "visits": 31,
+          "value": 0.6887391935483872
+        }
+      ],
+      "player_points": 3,
+      "action_type": "buy_card",
+      "duration_ms": 1002.3419857025146,
+      "is_best_move": true,
+      "best_win_prob": 0.7982144687500001,
+      "actual_win_prob": 0.7982144687500001,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 12,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        5,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 1,
+      "win_probability": 0.42316000000000004,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.34605708333333335,
+      "actual_win_prob": 0.363625,
+      "accuracy_loss": -0.017567916666666628,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 13,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        3,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.9073307926829269,
+      "search_depth": 3,
+      "simulation_count": 327,
+      "visit_distribution": [
+        {
+          "visits": 82,
+          "value": 0.9073307926829269
+        },
+        {
+          "visits": 54,
+          "value": 0.8517768055555557
+        },
+        {
+          "visits": 33,
+          "value": 0.7987352272727274
+        }
+      ],
+      "player_points": 3,
+      "action_type": "take_2_same",
+      "duration_ms": 1039.0703678131104,
+      "is_best_move": true,
+      "best_win_prob": 0.9093365384615386,
+      "actual_win_prob": 0.9093365384615386,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 13,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        5,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.47261296875000003,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 1,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.15951800000000005,
+      "actual_win_prob": 0.5732499999999999,
+      "accuracy_loss": -0.4137319999999999,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 14,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        4,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.92173820977918,
+      "search_depth": 4,
+      "simulation_count": 348,
+      "visit_distribution": [
+        {
+          "visits": 317,
+          "value": 0.92173820977918
+        },
+        {
+          "visits": 30,
+          "value": 0.6363947500000001
+        },
+        {
+          "visits": 20,
+          "value": 0.47896175
+        }
+      ],
+      "player_points": 3,
+      "action_type": "buy_card",
+      "duration_ms": 1003.220796585083,
+      "is_best_move": true,
+      "best_win_prob": 0.922983042168675,
+      "actual_win_prob": 0.922983042168675,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 14,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        5,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 4,
+      "win_probability": 0.2,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 2,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": true,
+      "best_win_prob": 0.8181818181818182,
+      "actual_win_prob": 0.8181818181818182,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 15,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        4,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 352,
+      "visit_distribution": [
+        {
+          "visits": 48,
+          "value": 1.0
+        },
+        {
+          "visits": 44,
+          "value": 0.989659090909091
+        },
+        {
+          "visits": 43,
+          "value": 0.9852674418604651
+        }
+      ],
+      "player_points": 3,
+      "action_type": "take_3_different",
+      "duration_ms": 1004.4677257537842,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 15,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        6,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.05269444444444445,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 2,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.14285714285714285,
+      "actual_win_prob": 0.25,
+      "accuracy_loss": -0.10714285714285715,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 16,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        4,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.9474700292397662,
+      "search_depth": 4,
+      "simulation_count": 338,
+      "visit_distribution": [
+        {
+          "visits": 342,
+          "value": 0.9474700292397662
+        },
+        {
+          "visits": 10,
+          "value": 0.1363
+        },
+        {
+          "visits": 9,
+          "value": 0.1111111111111111
+        }
+      ],
+      "player_points": 3,
+      "action_type": "take_3_different",
+      "duration_ms": 1024.0187644958496,
+      "is_best_move": true,
+      "best_win_prob": 0.9474479405034326,
+      "actual_win_prob": 0.9474479405034326,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 16,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        6,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.20096592857142856,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 2,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.8108108108108109,
+      "actual_win_prob": 0.2222222222222222,
+      "accuracy_loss": 0.5885885885885886,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 17,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        5,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.9056289094387755,
+      "search_depth": 5,
+      "simulation_count": 359,
+      "visit_distribution": [
+        {
+          "visits": 392,
+          "value": 0.9056289094387755
+        },
+        {
+          "visits": 19,
+          "value": 0.05263157894736842
+        },
+        {
+          "visits": 18,
+          "value": 0.05555555555555555
+        }
+      ],
+      "player_points": 3,
+      "action_type": "buy_card",
+      "duration_ms": 1005.3591728210449,
+      "is_best_move": true,
+      "best_win_prob": 0.9163398622448979,
+      "actual_win_prob": 0.9163398622448979,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 17,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        7,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 1,
+      "win_probability": 0.21877380952380956,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 3,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.8333333333333334,
+      "actual_win_prob": 0.37060714285714286,
+      "accuracy_loss": 0.4627261904761905,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 18,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        5,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.9533333333333334,
+      "search_depth": 4,
+      "simulation_count": 292,
+      "visit_distribution": [
+        {
+          "visits": 300,
+          "value": 0.9533333333333334
+        },
+        {
+          "visits": 23,
+          "value": 0.19975000000000004
+        },
+        {
+          "visits": 19,
+          "value": 0.15789473684210525
+        }
+      ],
+      "player_points": 3,
+      "action_type": "take_3_different",
+      "duration_ms": 1010.9870433807373,
+      "is_best_move": true,
+      "best_win_prob": 0.964735516372796,
+      "actual_win_prob": 0.964735516372796,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 18,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        7,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.2,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 5,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.7837837837837838,
+      "actual_win_prob": 0.4375,
+      "accuracy_loss": 0.34628378378378377,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 19,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        6,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.9139240506329114,
+      "search_depth": 4,
+      "simulation_count": 362,
+      "visit_distribution": [
+        {
+          "visits": 395,
+          "value": 0.9139240506329114
+        },
+        {
+          "visits": 34,
+          "value": 0.20588235294117646
+        },
+        {
+          "visits": 19,
+          "value": 0.0
+        }
+      ],
+      "player_points": 4,
+      "action_type": "buy_card",
+      "duration_ms": 1006.9243907928467,
+      "is_best_move": true,
+      "best_win_prob": 0.922920892494929,
+      "actual_win_prob": 0.922920892494929,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 19,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        8,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 5,
+      "action_type": "buy_card",
+      "duration_ms": 1.0008811950683594,
+      "is_best_move": false,
+      "best_win_prob": 0.8378378378378378,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.8378378378378378,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 20,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        6,
+        1,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 351,
+      "visit_distribution": [
+        {
+          "visits": 26,
+          "value": 1.0
+        },
+        {
+          "visits": 26,
+          "value": 1.0
+        },
+        {
+          "visits": 26,
+          "value": 1.0
+        }
+      ],
+      "player_points": 4,
+      "action_type": "reserve_card",
+      "duration_ms": 1005.0458908081055,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 20,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        8,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 5,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.0,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 21,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        6,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.97,
+      "search_depth": 4,
+      "simulation_count": 394,
+      "visit_distribution": [
+        {
+          "visits": 400,
+          "value": 0.97
+        },
+        {
+          "visits": 11,
+          "value": 0.09090909090909091
+        },
+        {
+          "visits": 11,
+          "value": 0.09090909090909091
+        }
+      ],
+      "player_points": 5,
+      "action_type": "buy_card",
+      "duration_ms": 1003.953218460083,
+      "is_best_move": true,
+      "best_win_prob": 0.9758064516129032,
+      "actual_win_prob": 0.9758064516129032,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 21,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        8,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 5,
+      "action_type": "take_3_different",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.8157894736842105,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.8157894736842105,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 22,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        6,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.9875311720698254,
+      "search_depth": 4,
+      "simulation_count": 406,
+      "visit_distribution": [
+        {
+          "visits": 401,
+          "value": 0.9875311720698254
+        },
+        {
+          "visits": 8,
+          "value": 0.375
+        },
+        {
+          "visits": 7,
+          "value": 0.14285714285714285
+        }
+      ],
+      "player_points": 5,
+      "action_type": "take_3_different",
+      "duration_ms": 1009.1149806976318,
+      "is_best_move": true,
+      "best_win_prob": 0.9875621890547264,
+      "actual_win_prob": 0.9875621890547264,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 22,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        8,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.3333333333333333,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 5,
+      "action_type": "reserve_card",
+      "duration_ms": 1.001119613647461,
+      "is_best_move": false,
+      "best_win_prob": 0.7906976744186046,
+      "actual_win_prob": 0.5454545454545454,
+      "accuracy_loss": 0.2452431289640592,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 23,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        7,
+        2,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.9647887323943662,
+      "search_depth": 4,
+      "simulation_count": 414,
+      "visit_distribution": [
+        {
+          "visits": 426,
+          "value": 0.9647887323943662
+        },
+        {
+          "visits": 22,
+          "value": 0.36363636363636365
+        },
+        {
+          "visits": 20,
+          "value": 0.35
+        }
+      ],
+      "player_points": 6,
+      "action_type": "buy_card",
+      "duration_ms": 1004.4941902160645,
+      "is_best_move": true,
+      "best_win_prob": 0.9712092130518234,
+      "actual_win_prob": 0.9712092130518234,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 23,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        8,
+        4,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 3,
+      "win_probability": 0.3,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 8,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": true,
+      "best_win_prob": 0.8285714285714286,
+      "actual_win_prob": 0.8285714285714286,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 24,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        7,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.9764705882352941,
+      "search_depth": 4,
+      "simulation_count": 429,
+      "visit_distribution": [
+        {
+          "visits": 425,
+          "value": 0.9764705882352941
+        },
+        {
+          "visits": 11,
+          "value": 0.36363636363636365
+        },
+        {
+          "visits": 8,
+          "value": 0.25
+        }
+      ],
+      "player_points": 7,
+      "action_type": "buy_card",
+      "duration_ms": 1004.4243335723877,
+      "is_best_move": true,
+      "best_win_prob": 0.9765258215962441,
+      "actual_win_prob": 0.9765258215962441,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 24,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        9,
+        4,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 8,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.8,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.8,
+      "move_classification": "Blunder"
+    },
+    {
+      "turn_number": 25,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        7,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 423,
+      "visit_distribution": [
+        {
+          "visits": 25,
+          "value": 1.0
+        },
+        {
+          "visits": 25,
+          "value": 1.0
+        },
+        {
+          "visits": 25,
+          "value": 1.0
+        }
+      ],
+      "player_points": 7,
+      "action_type": "reserve_card",
+      "duration_ms": 1005.3908824920654,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 25,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        10,
+        4,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 1,
+      "win_probability": 0.3333333333333333,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 8,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.0,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 26,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        8,
+        3,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 446,
+      "visit_distribution": [
+        {
+          "visits": 47,
+          "value": 1.0
+        },
+        {
+          "visits": 47,
+          "value": 1.0
+        },
+        {
+          "visits": 47,
+          "value": 1.0
+        }
+      ],
+      "player_points": 7,
+      "action_type": "buy_card",
+      "duration_ms": 1001.9290447235107,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 26,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        10,
+        5,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 10,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": true,
+      "best_win_prob": 0.0,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 27,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        8,
+        4,
+        0
+      ],
+      "nobles_owned": 1,
+      "gems_returned": 2,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 503,
+      "visit_distribution": [
+        {
+          "visits": 39,
+          "value": 1.0
+        },
+        {
+          "visits": 39,
+          "value": 1.0
+        },
+        {
+          "visits": 39,
+          "value": 1.0
+        }
+      ],
+      "player_points": 12,
+      "action_type": "buy_card",
+      "duration_ms": 1002.2842884063721,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 27,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        10,
+        6,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 2,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 13,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": true,
+      "best_win_prob": 0.0,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 28,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        8,
+        5,
+        0
+      ],
+      "nobles_owned": 1,
+      "gems_returned": 2,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 530,
+      "visit_distribution": [
+        {
+          "visits": 28,
+          "value": 1.0
+        },
+        {
+          "visits": 28,
+          "value": 1.0
+        },
+        {
+          "visits": 28,
+          "value": 1.0
+        }
+      ],
+      "player_points": 14,
+      "action_type": "buy_card",
+      "duration_ms": 1004.6930313110352,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 28,
+      "active_player": 0,
+      "player_type": "Basic",
+      "cards_owned_by_tier": [
+        11,
+        6,
+        0
+      ],
+      "nobles_owned": 0,
+      "gems_returned": 0,
+      "win_probability": 0.0,
+      "search_depth": 0,
+      "simulation_count": 0,
+      "visit_distribution": [],
+      "player_points": 13,
+      "action_type": "buy_card",
+      "duration_ms": 0.0,
+      "is_best_move": false,
+      "best_win_prob": 0.0,
+      "actual_win_prob": 0.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    },
+    {
+      "turn_number": 29,
+      "active_player": 1,
+      "player_type": "MCTS",
+      "cards_owned_by_tier": [
+        8,
+        6,
+        0
+      ],
+      "nobles_owned": 1,
+      "gems_returned": 0,
+      "win_probability": 1.0,
+      "search_depth": 3,
+      "simulation_count": 536,
+      "visit_distribution": [
+        {
+          "visits": 30,
+          "value": 1.0
+        },
+        {
+          "visits": 30,
+          "value": 1.0
+        },
+        {
+          "visits": 30,
+          "value": 1.0
+        }
+      ],
+      "player_points": 15,
+      "action_type": "buy_card",
+      "duration_ms": 1002.2158622741699,
+      "is_best_move": true,
+      "best_win_prob": 1.0,
+      "actual_win_prob": 1.0,
+      "accuracy_loss": 0.0,
+      "move_classification": "Best"
+    }
+  ]
+}
