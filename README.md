@@ -5,7 +5,7 @@
 [![Win Rate](https://img.shields.io/badge/Tournament%20Win%20Rate-80.2%25-brightgreen.svg)](#-tournament-benchmarks--ablation-study)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Institution: UNIWA](https://img.shields.io/badge/Institution-University%20of%20West%20Attica-purple.svg)](https://www.uniwa.gr/en/)
-[![Grade](https://img.shields.io/badge/Diploma%20Thesis%20Grade-10%2F10-gold.svg)](#-diploma-thesis-documentation)
+[![Grade](https://img.shields.io/badge/Diploma%20Thesis%20Grade-10%2F10-gold.svg)](#-author--acknowledgments)
 
 > **Diploma Thesis Project**  
 > **Department of Informatics and Computer Engineering, University of West Attica (UNIWA)**  
@@ -31,8 +31,8 @@ An enterprise-grade, high-performance artificial intelligence engine and interac
 - [Repository Structure](#-repository-structure)
 - [Installation & Quick Start](#-installation--quick-start)
 - [Running Simulations & Analytics](#-running-simulations--analytics)
-- [Diploma Thesis Documentation](#-diploma-thesis-documentation)
 - [License](#-license)
+- [Author & Acknowledgments](#-author--acknowledgments)
 
 ---
 
@@ -296,18 +296,9 @@ Splendor-MCTS-AI/
 │
 ├── data/                            # Datasets, benchmarks & persistent cache
 │   ├── games.json                  # Clean tournament dataset (starts at 0 games, dynamically grows)
-│   ├── games_benchmark_253.json    # Reference 253-game thesis tournament benchmark (454 KB)
 │   ├── overall_analytics.py        # Real-time Tkinter/Matplotlib live dashboard
 │   ├── overall_analytics_dashboard.png # Benchmark dashboard preview
-│   ├── mcts_knowledge.zip          # 80,984-state persistent knowledge base (4.75 MB)
-│   ├── sample_game/                # Reference pre-generated game with complete telemetry & charts
 │   └── Games/                      # Output directory for newly simulated games (.gitkeep)
-│
-├── docs/                            # Academic thesis & presentation deliverables
-│   ├── Splendor_AI_Diploma_Thesis.pdf           # Full Diploma Thesis document
-│   ├── Splendor_AI_Defense_Presentation.pdf     # Defense PowerPoint presentation (PDF)
-│   ├── MCTS_Theory_and_Hyperparameters_Supplement.pdf # Mathematical derivations & ablation
-│   └── Thesis_Defense_QnA_Master_Guide.pdf      # Complete committee defense Q&A guide
 │
 ├── assets/                          # High-resolution benchmark charts & visuals
 │   ├── battle_of_confidence.png
@@ -406,16 +397,6 @@ python data/overall_analytics.py
   2. *Total States Memorized* in the persistent Knowledge Base.
   3. *Game Turn Efficiency* (turns taken to reach the 15-point victory threshold).
 
-> **💡 Inspecting the 253-Game Thesis Benchmark:**  
-> If you want to view the exact 253-game benchmark dataset analyzed in the Diploma Thesis, simply restore the pre-packaged benchmark file:  
-> ```bash
-> # Windows
-> copy data\games_benchmark_253.json data\games.json
-> # Linux / macOS
-> cp data/games_benchmark_253.json data/games.json
-> ```  
-> Then re-launch `python data/overall_analytics.py` to view the full 80.2% win-rate curves!
-
 ---
 
 ### 3. Interactive MCTS Search Tree Visualizer (`visualize_tree.py`)
@@ -442,17 +423,6 @@ Validate the deep-dive analytics telemetry, MCTS Critic, and persistent knowledg
 python test_deep_dive.py
 python test_kb.py
 ```
-
----
-
-## 📜 Diploma Thesis Documentation
-
-The complete academic deliverables for this thesis are included in the [`docs/`](docs/) directory:
-
-- 📄 **[Full Diploma Thesis (PDF)](docs/Splendor_AI_Diploma_Thesis.pdf):** Complete, comprehensive academic dissertation.
-- 📽️ **[Defense Presentation Slides (PDF)](docs/Splendor_AI_Defense_Presentation.pdf):** Slide deck delivered during the formal thesis defense.
-- 📐 **[MCTS Theory & Hyperparameter Supplement (PDF)](docs/MCTS_Theory_and_Hyperparameters_Supplement.pdf):** Rigorous mathematical derivation of UCB1 via Hoeffding's Inequality, exploration parameter convergence proofs, and Tables 4 & 5 ablation data.
-- 🎓 **[Examination Committee Q&A Master Guide (PDF)](docs/Thesis_Defense_QnA_Master_Guide.pdf):** 30 exhaustive technical questions and academic responses on game theory, MCTS convergence, and implementation details.
 
 ---
 
