@@ -295,12 +295,13 @@ Splendor-MCTS-AI/
 │   └── visualize_mcts_ai.py        # MCTS tree performance telemetry
 │
 ├── data/                            # Datasets, benchmarks & persistent cache
-│   ├── games.json                  # Complete 253-game tournament dataset (454 KB)
-│   ├── overall_analytics.py        # Interactive Tkinter/Matplotlib analytics dashboard
+│   ├── games.json                  # Clean tournament dataset (starts at 0 games, dynamically grows)
+│   ├── games_benchmark_253.json    # Reference 253-game thesis tournament benchmark (454 KB)
+│   ├── overall_analytics.py        # Real-time Tkinter/Matplotlib live dashboard
 │   ├── overall_analytics_dashboard.png # Benchmark dashboard preview
 │   ├── mcts_knowledge.zip          # 80,984-state persistent knowledge base (4.75 MB)
-│   └── Games/                      # Sample match data for instant visualization
-│       └── game_1/                 # Match telemetry and high-res plots
+│   ├── sample_game/                # Reference pre-generated game with complete telemetry & charts
+│   └── Games/                      # Output directory for newly simulated games (.gitkeep)
 │
 ├── docs/                            # Academic thesis & presentation deliverables
 │   ├── Splendor_AI_Diploma_Thesis.pdf           # Full Diploma Thesis document
@@ -320,7 +321,7 @@ Splendor-MCTS-AI/
 │
 ├── lib/                             # PyVis offline JavaScript/CSS bundles (vis.js)
 │
-├── main.py                          # Main interactive GUI entry point
+├── main.py                          # Main interactive GUI entry point (Pygame 60 FPS)
 ├── simulate_batch.py                # Headless multi-game batch tournament runner
 ├── generate_post_game_analytics.py  # Full post-match reporting pipeline
 ├── generate_comparison_visuals.py   # Generates comparative analytics figures
@@ -369,34 +370,74 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-*Enjoy a live, 60 FPS match between the Heuristic Agent and the MCTS Agent with real-time HUD commentary!*
+*Features a real-time, 60 FPS graphical simulation of an AI vs. AI match with live HUD commentary and decision-making visualization.*
 
 ---
 
-## 📊 Running Simulations & Analytics
+## 📊 Running Simulations, Analytics & Experimental Results
 
-### Run a Headless Batch Tournament
-Benchmark the agents over any number of games without GUI overhead:
+### 1. Automated Batch Tournament Runner (`simulate_batch.py`)
+Run headless tournament games between the Heuristic Baseline Agent (Player 1) and the Flagship MCTS Agent (Player 2) without GUI rendering overhead:
 ```bash
-# Run a 20-game tournament
-python simulate_batch.py --games 20
+# Simulate 10 tournament games
+python simulate_batch.py --games 10
 ```
+**What happens during simulation:**
+1. A new folder is automatically created under `data/Games/game_N/` for every completed match.
+2. The turn-by-turn game state and moves are serialized to `game_batch_YYYYMMDD_HHMMSS_N.json`.
+3. Four high-resolution analytical charts are automatically plotted and saved inside `data/Games/game_N/`:
+   - `visual_1_battle_of_confidence.png`: Turn-by-turn projected win probability for both players.
+   - `visual_2_thinking_effort.png`: Search tree depth and number of simulated rollouts per turn.
+   - `visual_3_strategy_dna.png`: Action breakdown (Card Purchases vs. Reservations vs. Gem Draws).
+   - `move_accuracy_strip_plot.png`: Optimality gap between chosen moves and the MCTS Critic.
+4. Summary match metadata is appended to `data/games.json`.
+5. High-visit search states are stored in the persistent knowledge base.
 
-### View the Live Tournament Dashboard
-Open the interactive dashboard analyzing all 253 tournament games:
+---
+
+### 2. Live Tournament Learning Dashboard (`data/overall_analytics.py`)
+Launch the auto-updating real-time dashboard:
 ```bash
 python data/overall_analytics.py
 ```
+- **Starts at zero games:** For clean distribution, `data/games.json` starts empty (`[]`). The dashboard will display `"No games simulated yet! Run python simulate_batch.py to start generating data."`
+- **Real-Time Polling:** As you run `python simulate_batch.py --games N`, the dashboard automatically detects newly completed games every 5 seconds and updates the three analytical subplots live:
+  1. *MCTS Rolling Win Rate Curve* (10-game window).
+  2. *Total States Memorized* in the persistent Knowledge Base.
+  3. *Game Turn Efficiency* (turns taken to reach the 15-point victory threshold).
 
-### Generate an Interactive MCTS Search Tree (HTML)
-Export and inspect a real-time MCTS decision tree in your web browser:
+> **💡 Inspecting the 253-Game Thesis Benchmark:**  
+> If you want to view the exact 253-game benchmark dataset analyzed in the Diploma Thesis, simply restore the pre-packaged benchmark file:  
+> ```bash
+> # Windows
+> copy data\games_benchmark_253.json data\games.json
+> # Linux / macOS
+> cp data/games_benchmark_253.json data/games.json
+> ```  
+> Then re-launch `python data/overall_analytics.py` to view the full 80.2% win-rate curves!
+
+---
+
+### 3. Interactive MCTS Search Tree Visualizer (`visualize_tree.py`)
+Export and inspect a live, clickable hierarchical search tree in your web browser:
 ```bash
 python visualize_tree.py
 ```
-*Creates an interactive graph in `data/game_YYYYMMDD_HHMMSS/mcts_tree_vertical.html`.*
+- Performs MCTS rollouts on a fresh Splendor state and outputs an interactive HTML network graph: `data/game_YYYYMMDD_HHMMSS/mcts_tree_vertical.html`.
+- Node colors reflect win rates (green = winning branches, red = losing branches) and node radius reflects visit counts ($N$).
 
-### Run the Analytics Verification Suite
-Ensure all telemetry components, critics, and knowledge base features function correctly:
+---
+
+### 4. Post-Game Analysis on any Recorded Game (`generate_post_game_analytics.py`)
+Generate comprehensive telemetry reports on any individual game folder:
+```bash
+python generate_post_game_analytics.py
+```
+
+---
+
+### 5. Run the Verification Test Suite
+Validate the deep-dive analytics telemetry, MCTS Critic, and persistent knowledge base:
 ```bash
 python test_deep_dive.py
 python test_kb.py
