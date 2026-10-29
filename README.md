@@ -2,15 +2,8 @@
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Pygame](https://img.shields.io/badge/GUI-Pygame%202.5%2B-green.svg)](https://www.pygame.org/)
-[![Win Rate](https://img.shields.io/badge/Tournament%20Win%20Rate-80.2%25-brightgreen.svg)](#-tournament-benchmarks--ablation-study)
+[![Algorithm: MCTS](https://img.shields.io/badge/Algorithm-MCTS%20%2B%20Heuristic-orange.svg)](#-algorithmic-architecture--mathematical-foundations)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Institution: UNIWA](https://img.shields.io/badge/Institution-University%20of%20West%20Attica-purple.svg)](https://www.uniwa.gr/en/)
-[![Grade](https://img.shields.io/badge/Diploma%20Thesis%20Grade-10%2F10-gold.svg)](#-author--acknowledgments)
-
-> **Diploma Thesis Project**  
-> **Department of Informatics and Computer Engineering, University of West Attica (UNIWA)**  
-> **Author:** Panagiotis Stavropoulos  
-> **Grade:** **10 / 10** (Unanimous Distinction)
 
 An enterprise-grade, high-performance artificial intelligence engine and interactive simulation platform for the world-renowned board game **Splendor**. The project combines **Monte Carlo Tree Search (MCTS)**, **Adaptive UCT exploration**, **a priori domain-specific move pruning**, **depth-limited rollouts**, and a **persistent state-action knowledge base** to master complex combinatorial strategy and resource management.
 
@@ -26,13 +19,12 @@ An enterprise-grade, high-performance artificial intelligence engine and interac
   - [4. Depth-Limited Rollout Horizon](#4-depth-limited-rollout-horizon)
   - [5. Persistent Knowledge Base](#5-persistent-knowledge-base)
 - [System Architecture](#-system-architecture)
-- [Tournament Benchmarks & Ablation Study](#-tournament-benchmarks--ablation-study)
+- [Hyperparameter Ablation Study](#-hyperparameter-ablation-study)
 - [Visual Analytics & Deep-Dive Telemetry](#-visual-analytics--deep-dive-telemetry)
 - [Repository Structure](#-repository-structure)
 - [Installation & Quick Start](#-installation--quick-start)
 - [Running Simulations & Analytics](#-running-simulations--analytics)
 - [License](#-license)
-- [Author & Acknowledgments](#-author--acknowledgments)
 
 ---
 
@@ -55,7 +47,7 @@ This repository implements:
 ## ⚡ Key Features
 
 - 🧠 **Autonomous MCTS AI Engine:** 300–1,000 Monte Carlo rollouts per second under real-time constraints.
-- 📈 **80.2% Tournament Win Rate:** Statistically proven across 253 consecutive tournament games against a strong heuristic player.
+- 📈 **Antagonistic Benchmarking:** Built-in tournament framework pitching the MCTS Agent against an expert heuristic baseline with live statistical telemetry.
 - 💾 **Persistent Knowledge Base:** Saves and restores high-visit search subtrees ($80,984+$ states), accelerating convergence in repeated mid-game positions.
 - 📊 **Deep-Dive Telemetry & Critic:** Computes move quality differentials and projected win margins on every turn.
 - 🎨 **Modular GUI & Headless Batch Simulator:** Play visually in Pygame or run thousands of games headlessly for hyperparameter benchmarking.
@@ -185,26 +177,9 @@ graph TD
 
 ---
 
-## 🏆 Tournament Benchmarks & Ablation Study
+## 🔬 Hyperparameter Ablation Study & Empirical Design
 
-### Full Tournament Summary (253 Games)
-
-Across 253 consecutive tournament games pitting the **Flagship MCTS Agent** against the **Expert Heuristic Baseline**:
-
-| Metric | MCTS Agent (P2) | Heuristic Baseline (P1) | Advantage |
-| :--- | :---: | :---: | :---: |
-| **Total Wins** | **203** | **50** | **+153 wins** |
-| **Win Rate** | **80.2%** | **19.8%** | **+60.4%** |
-| **Average Final Points** | **15.78 pts** | **10.42 pts** | **+5.36 pts** |
-| **Average Turns to Victory** | **34.2 turns** | **41.8 turns** | **-7.6 turns (Faster)** |
-| **Noble Patron Attainment** | **1.81 / game** | **0.62 / game** | **$2.9\times$ higher** |
-| **Average Move Calculation Time** | **1.84 s** | **0.02 s** | Real-time compliant |
-
----
-
-### Hyperparameter Ablation Study
-
-To systematically justify our parameter configuration ($c_{\text{base}} = \sqrt{2}$, $d = 30$, $[80, 12, 8]$ scoring), rigorous ablation tests were performed:
+The repository starts with a clean slate so users can execute their own custom rollouts and tournament simulations. To systematically justify the default parameter configuration ($c_{\text{base}} = \sqrt{2}$, $d = 30$, $[80, 12, 8]$ scoring), rigorous ablation tests were performed:
 
 #### Table 4: Exploration Constant ($C$) and Depth ($d$) Ablation
 | Configuration | $C$ Exploration Parameter | Depth Limit ($d$) | Win Rate vs Baseline | Avg Turns to Win | Decision Time / Turn |
@@ -230,7 +205,7 @@ To systematically justify our parameter configuration ($c_{\text{base}} = \sqrt{
 The platform includes automated visual telemetry generation for every game:
 
 ### 1. Overall Tournament Learning Dashboard
-Visualizes tournament win-rate evolution, turn efficiency over 250+ games, and strategy composition.
+Visualizes tournament win-rate evolution, turn efficiency across simulated matches, and strategy composition.
 ![Overall Analytics Dashboard](assets/overall_analytics_dashboard.png)
 
 ---
@@ -297,7 +272,6 @@ Splendor-MCTS-AI/
 ├── data/                            # Datasets, benchmarks & persistent cache
 │   ├── games.json                  # Clean tournament dataset (starts at 0 games, dynamically grows)
 │   ├── overall_analytics.py        # Real-time Tkinter/Matplotlib live dashboard
-│   ├── overall_analytics_dashboard.png # Benchmark dashboard preview
 │   └── Games/                      # Output directory for newly simulated games (.gitkeep)
 │
 ├── assets/                          # High-resolution benchmark charts & visuals
@@ -429,14 +403,3 @@ python test_kb.py
 ## ⚖️ License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author & Acknowledgments
-
-**Panagiotis Stavropoulos**  
-*Undergraduate Diploma Thesis, Department of Informatics and Computer Engineering*  
-*University of West Attica (UNIWA), Athens, Greece*  
-- **Thesis Evaluation Grade:** **10 / 10 (Άριστα)**  
-
-*Special thanks to the thesis advisor and committee members for their constructive guidance and valuable academic feedback.*
